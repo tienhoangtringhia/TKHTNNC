@@ -1,0 +1,77 @@
+//========= Composed by LamPham =============//
+
+1/ Ready directory:
+
+|--04_ex04
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_V01_T01.v
+|     |     |--file_V04_T02.v
+|     |     |--file_V03_T03.v
+|     |     |--file_V04_T04.v
+|     |     |
+|     |     |--file_X01.v
+|     |     |--file_X02.v
+|     |     |--file_X03.v
+|     |     |--file_X04.v
+|     |     |
+|     |     |--file_T01.v
+|     |     |--file_T02.v
+|     |     |--file_T03.v
+|     |     |--file_T04.v
+|     |
+|     |--folder_02
+|
+|--ex_04.bash
+|
+|--readme
+
+2/ Requirement:
+
++ Remove all files in "folder_02"
++ Open file "ex_04.bash" by "VI" and compose a short script so as to find all files in format of "file*V0*v"  to "folder_02" and rename to follow an order:
+  
+   XXX_V44.v is corresponding to file_V01_T01.v
+   XXX_V33.V is corresponding to file_V02_T02.v
+   XXX_V22.V is corresponding to file_V03_T03.v
+   XXX_V11.V is corresponding to file_V04_T04.v
+
++ Guide: Use commands "find" and "for"
+
+3/ How to run
+
+   ./ex_04.bash 
+
+4/ Expected result 
+
+|--04_ex04
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_V01_T01.v
+|     |     |--file_V04_T02.v
+|     |     |--file_V03_T03.v
+|     |     |--file_V04_T04.v
+|     |     |
+|     |     |--file_X01.v
+|     |     |--file_X02.v
+|     |     |--file_X03.v
+|     |     |--file_X04.v
+|     |     |
+|     |     |--file_T01.v
+|     |     |--file_T02.v
+|     |     |--file_T03.v
+|     |     |--file_T04.v
+|     |
+|     |--folder_02
+|           |
+|           |
+|           |--XXX_V11.v
+|           |--XXX_V22.v
+|           |--XXX_V33.v
+|           |--XXX_V44.v
+|     
+|--ex_04.bash
+|
+|--readme

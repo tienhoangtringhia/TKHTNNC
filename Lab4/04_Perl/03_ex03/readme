@@ -1,0 +1,55 @@
+//========= Composed by LamPham =============//
+
+1/ Ready directory:
+
+|--03_ex03
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_01.v
+|     |
+|     |--folder_02
+|
+|--ex_03.pl
+|
+|--readme
+
+2/ Requirement:
+
++ Delete all files in "folder_02"
+
++ Open file "ex_03.pl" by "VI" and compose a short script so as to copy "file_01" to "folder_02" and 
+   + Change name to "file_02.v"
+   + Replace "PARAMETER_WIDTH" by 10, in which 10 is the first input arguement
+   + Inset 3 new lines below, in which 4, 5, 6 are three next input arguements
+
+      parameter ADDR_WIDTH = 4;
+      parameter BUS_WIDTH  = 5; 
+      parameter NET_WIDTH  = 6;
+
+    --> The insert position is followed the line:  "//INSERT PARAMETER"
+
+
++ Guide: Use code : $PARAMETER_WIDTH       = $ARGV[0]; # Variable "PARAMETER_WIDTH" will receive input arguement "10"
+                    $PARAMETER_ADDR_WIDTH  = $ARGV[1]; 
+                    .............
+
+3/ How to run
+
+   /usr/bin/perl ex_03.pl 10 4 5 6
+
+4/ Expected result 
+
+|--01_ex03
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_01.v
+|     |
+|     |--folder_02
+|           |
+|           |--file_02.v
+|     
+|--ex_03.pl
+|
+|--readme

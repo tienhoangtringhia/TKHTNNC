@@ -1,0 +1,59 @@
+//========= Composed by LamPham =============//
+
+1/ Ready directory:
+
+|--02_ex02
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_V01.v
+|     |     |--file_V02.v
+|     |     |--file_V03.v
+|     |     |--file_V04.v
+|     |
+|     |--folder_02
+|
+|--ex_02.bash
+|
+|--readme
+
+2/ Requirement:
+
++ Remove all files in "folder_02"
+
++ Open file "ex_02.bash" by "VI" and compose a short script so as to copy "file_V04" to "folder_02" basing on input arguement 04 or
++ Open file "ex_02.bash" by "VI" and compose a short script so as to copy "file_V03" to "folder_02" basing on input arguement 03 or
+  .....
+
++ Guide: Use command " argument=$1 " to receive "V03"
+
+         Use command " file_name="file_$argument" " to achieve string "file_V03"
+         Use command " tail=".v" "
+         Use command " file_name_full =$filename$tail " to achieve full string "file_V03.v"
+    OR
+         Use command " file_name="file_$argument.v" " to achieve full string "file_V03.v"
+         
+
+
+3/ How to run
+
+   ./ex_02.bash V03 --> "V03" is input argument of script "ex_02.bash"
+
+4/ Expected result 
+
+|--02_ex02
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_V01.v
+|     |     |--file_V02.v
+|     |     |--file_V03.v
+|     |     |--file_V04.v
+|     |
+|     |--folder_02
+|           |
+|           |--file_V04.v or file_V03
+|     
+|--ex_02.bash
+|
+|--readme

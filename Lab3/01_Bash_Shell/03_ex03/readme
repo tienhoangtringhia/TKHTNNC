@@ -1,0 +1,53 @@
+//========= Composed by LamPham =============//
+
+1/ Ready directory:
+
+|--03_ex03
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_V01.v
+|     |     |--file_V02.v
+|     |     |--file_V03.v
+|     |     |--file_V04.v
+|     |     |--file_X01
+|     |     |--file_X02
+|     |     |--file_X03
+|     |     |--file_X04
+|     |
+|     |--folder_02
+|
+|--ex_03.bash
+|
+|--readme
+
+2/ Requirement:
+
+Remove all files in "folder_02"
+Open file "ex_03.bash" by "VI" and compose a short script so as to move/cut all <file>.v to "folder_02" 
+
+3/ How to run
+
+   ./ex_03.bash 
+
+4/ Expected result 
+
+|--03_ex03
+|     |
+|     |--folder_01
+|     |     |
+|     |     |--file_X01
+|     |     |--file_X02
+|     |     |--file_X03
+|     |     |--file_X04
+|     |
+|     |--folder_02
+|           |
+|           |--file_V01.v
+|           |--file_V02.v
+|           |--file_V03.v
+|           |--file_V04.v
+|     
+|--ex_03.bash
+|
+|--readme
